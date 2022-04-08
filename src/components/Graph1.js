@@ -10,7 +10,7 @@ class Graph1 extends React.Component {
     {
       name: "Cases",
       data: [
-        5555,
+        555,
         12038,
         69030,
         88369,
