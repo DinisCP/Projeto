@@ -1,4 +1,5 @@
 import './App.css';
+import Graph1 from './components/Graph1';
 
 import DropFileInput from './components/drop-file-input/DropFileInput';
 
@@ -11,12 +12,15 @@ function App() {
     return (
         <div className="box">
             <h2 className="header">
-                React drop files input
+                Importar ficheiros
             </h2>
             <DropFileInput
                 onFileChange={(files) => onFileChange(files)}
             />
+
         </div>
+
+       
     );
 }
 
