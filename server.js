@@ -6,7 +6,7 @@ const app = express();
 app.use(fileUpload());
 
 // Upload Endpoint
-app.post('/upload', (req, res) => {
+app.post('/public/uploads', (req, res) => {
   if (req.items === null) {
     return res.status(400).json({ msg: 'No file uploaded' });
   }
@@ -19,7 +19,7 @@ app.post('/upload', (req, res) => {
       return res.status(500).send(err);
     }
 
-    res.json({ itemName: item.name, itemPath: `/uploads/${item.name}` });
+    res.json({ itemName: item.name, itemPath: `/public/uploads/${item.name}` });
   });
 
 });
